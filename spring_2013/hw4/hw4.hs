@@ -10,7 +10,6 @@ fun2 = sum
         . filter even
         . takeWhile (> 1)
         . iterate (\x -> if even x then x `div` 2 else x * 3 + 1)
-        . (\x -> if even x then x * 2 else x)
 
 data Tree a = Leaf
             | Node Integer (Tree a) a (Tree a)
